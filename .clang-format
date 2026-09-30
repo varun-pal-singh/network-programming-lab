@@ -1,0 +1,32 @@
+---
+# Web: https://llvm.org
+BasedOnStyle: Google
+
+# Google style defaults to 2 spaces for indentation
+IndentWidth: 2
+ContinuationIndentWidth: 4
+AccessModifierOffset: -1
+
+# Google style strictly enforces an 80-character column limit
+ColumnLimit: 100
+
+# Braces placement rules
+BreakBeforeBraces: Attach
+AllowShortBlocksOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Empty
+
+# Pointer and reference alignment (Google prefers 'type* var')
+PointerAlignment: Left
+
+# Spaces and formatting hygiene
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+SpaceAfterCStyleCast: false
+SpaceBeforeParents: ControlStatements
+UseTab: Never
+
+# Include block sorting (alphabetical group sorting)
+SortIncludes: CaseSensitive
+IncludeBlocks: Regroup
+...
