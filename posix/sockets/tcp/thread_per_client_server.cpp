@@ -113,9 +113,9 @@ int32_t main() {
     exit(1);
   }
 
-  constexpr int32_t listening_queue_size = 2;
+  // constexpr int32_t listening_queue_size = 2;
 
-  if (int32_t ret = listen(server_fd, listening_queue_size); ret < 0) {
+  if (int32_t ret = listen(server_fd, SEND_Q_SIZE); ret < 0) {
     printf("listening failed, can not listen to more connections, ret: %d\n", ret);
     exit(1);
   }
